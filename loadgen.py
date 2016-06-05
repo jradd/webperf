@@ -1,8 +1,7 @@
 
 #!/usr/bin/python
 """
-Load tester for visiting a website, viewing a product
-page, and adding that product to one's cart.
+Generate load on a web server using simple get requests
 """  
 import sys
 import gevent

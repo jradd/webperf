@@ -1,4 +1,4 @@
-""" Simple Comparison/Reference between urllib2,urllib3 and requests. """
+""" Simple Comparison/Reference between urllib2 and requests. """
 import time
 import sys
 

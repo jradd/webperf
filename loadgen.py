@@ -17,7 +17,7 @@ import os
 import time
 import urllib2
 
-POOL_SIZE = 500 # number of concurrent sessions
+POOL_SIZE = 5000 # number of concurrent sessions
 MAX_SESSIONS = 10000 # total number of sessions to test
 
 
@@ -36,7 +36,7 @@ request_stats = collections.defaultdict(list)
 
 def record_request(url, start, finish):
     """ Store request start/stop time into a global stats dict. """
-    global request_stats
+    global threads
     threads = [request_stats[url].append((start, finish))]
     gevent.joinall(threads)
 
